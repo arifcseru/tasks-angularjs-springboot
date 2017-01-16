@@ -8,6 +8,7 @@ taskManagerModule.controller('taskManagerController', function ($scope, $http) {
  $scope.statuses = ['ACTIVE','COMPLETED'];
  $scope.priorities = ['HIGH','LOW','MEDIUM'];
  $http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
+
   
  //get all tasks and display initially
  $http.get(urlBase + '/tasks').
