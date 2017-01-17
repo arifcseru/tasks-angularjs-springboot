@@ -26,13 +26,13 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 
-import com.example.DemoApplication;
+import com.example.InitApplication;
 import com.example.domain.Task;
 import com.example.service.TaskService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
-@SpringApplicationConfiguration(classes = DemoApplication.class)
+@SpringApplicationConfiguration(classes = InitApplication.class)
 public class TaskServiceImplTests {
 
 	private MediaType contentType = new MediaType(MediaType.APPLICATION_JSON.getType(),

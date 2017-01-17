@@ -1,8 +1,8 @@
 var taskManagerModule = angular.module('taskManagerApp', []);
  
-taskManagerModule.controller('taskManagerController', function ($scope, $http) {
+taskManagerModule.controller('taskManagerController', function ($scope, $http, $window) {
   
- var urlBase = "http://localhost:8080";
+ var urlBase = $window.location.origin;
  $scope.toggle = true;
  $scope.selection = [];
  $scope.statuses = ['ACTIVE','COMPLETED'];
