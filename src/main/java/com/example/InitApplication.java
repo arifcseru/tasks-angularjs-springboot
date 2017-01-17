@@ -9,6 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class InitApplication {
 
 	public static void main(String[] args) {
+		
+		System.setProperty("security.user.password", "xpto123");
+		
 		SpringApplication.run(InitApplication.class, args);
 	}
 }
