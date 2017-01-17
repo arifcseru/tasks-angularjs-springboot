@@ -20,11 +20,11 @@ mvn package.
 ```
 4 - After execute command java:
 ``` script
--jar target/tasks-angularjs-springboot-0.0.1-SNAPSHOT.jar
+java -jar target/tasks-angularjs-springboot-0.0.1-SNAPSHOT.jar
 ```
 5 - Application started in port 8080.
 
 You can access application in Paas Heroku.
 
-https://evening-caverns-77497.herokuapp.com/form.html
+https://evening-caverns-77497.herokuapp.com
 
