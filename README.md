@@ -26,5 +26,11 @@ java -jar target/tasks-angularjs-springboot-0.0.1-SNAPSHOT.jar
 
 You can access application in Paas Heroku.
 
+The basic autenthication is:
+
+user: user
+
+password: xpto123
+
 https://evening-caverns-77497.herokuapp.com
 
