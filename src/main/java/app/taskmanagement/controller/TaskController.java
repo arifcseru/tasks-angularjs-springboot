@@ -34,6 +34,11 @@ public class TaskController {
 
 		return this.taskService.findAll();
 	}
+	@RequestMapping(value = "/tasks/delete/{taskId}", method = RequestMethod.POST, headers = "Accept=application/json")
+	public List<Task> deleteTask(@PathVariable Integer taskId) {
+		this.taskService.delete(taskId);
+                return this.taskService.findAll();
+	}
 
 	@RequestMapping(value = "/tasks/{taskId}/{taskStatus}", method = RequestMethod.POST, headers = "Accept=application/json")
 	public List<Task> changeTaskStatus(@PathVariable int taskId, @PathVariable String taskStatus) {

@@ -6,6 +6,7 @@ import app.taskmanagement.domain.Task;
 
 public interface TaskService {
 	void add(Task task);
+	void delete(Integer taskId);
 	void update(Task task);
 	List<Task> findAll();
 	Task findById(Integer taskId);

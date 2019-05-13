@@ -41,6 +41,17 @@ taskManagerModule.controller('taskManagerController', function ($scope, $http, $
     });
   }
  };
+ //delete a task
+
+    $scope.deleteTask = function deleteTask(taskId) {
+        var res = confirm("Are You Sure?");
+        if (res) {
+            $http.post(urlBase + '/tasks/delete/' + taskId).success(function (data) {
+                 $scope.tasks = data;
+            });
+        }
+    };
+
    
  // toggle selection for a given task by task id
    $scope.toggleSelection = function toggleSelection(taskId) {
