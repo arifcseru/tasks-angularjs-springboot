@@ -1,10 +1,10 @@
-package com.example.repository;
+package app.taskmanagement.repository;
 
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
-import com.example.domain.Task;
+import app.taskmanagement.domain.Task;
 
 public interface TaskRepository extends PagingAndSortingRepository<Task, Integer> {
 	

@@ -1,4 +1,4 @@
-package com.example;
+package app.taskmanagement;
 
 import java.sql.SQLException;
 

@@ -26,9 +26,9 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 
-import com.example.InitApplication;
-import com.example.domain.Task;
-import com.example.service.TaskService;
+import app.taskmanagement.InitApplication;
+import app.taskmanagement.domain.Task;
+import app.taskmanagement.service.TaskService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration

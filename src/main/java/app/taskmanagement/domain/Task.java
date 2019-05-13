@@ -1,4 +1,4 @@
-package com.example.domain;
+package app.taskmanagement.domain;
 
 import java.io.Serializable;
 

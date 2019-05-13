@@ -31,7 +31,7 @@ taskManagerModule.controller('taskManagerController', function ($scope, $http, $
   } else{
    $http.post(urlBase + '/tasks/insert/' +$scope.taskName + '/' +$scope.taskDesc + '/' +$scope.taskPriority +'/' + $scope.taskStatus).
     success(function(data) {
-	    alert("Task added");
+	    //alert("Task added");
 	    $scope.tasks = data; 
 	    $scope.taskName="";
 	    $scope.taskDesc="";
@@ -50,14 +50,14 @@ taskManagerModule.controller('taskManagerController', function ($scope, $http, $
      if (idx > -1) {
        $http.post(urlBase + '/tasks/' +taskId+'/ACTIVE').
         success(function(data) {
-        alert("Task unmarked");
+        //alert("Task unmarked");
         $scope.tasks = data;         
       });
        $scope.selection.splice(idx, 1);
      } else {
        $http.post(urlBase + '/tasks/' +taskId+'/COMPLETED').
         success(function(data) {
-        alert("Task marked completed");
+        //alert("Task marked completed");
         $scope.tasks = data;
       });
        $scope.selection.push(taskId);
@@ -70,7 +70,7 @@ taskManagerModule.controller('taskManagerController', function ($scope, $http, $
     $http.post(urlBase + '/tasks/archive/' + $scope.selection).
     success(function(data) {
      $scope.tasks = data;
-         alert("Successfully Archived");
+         //alert("Successfully Archived");
       });
    };
   

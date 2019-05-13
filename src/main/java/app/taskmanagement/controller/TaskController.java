@@ -1,4 +1,4 @@
-package com.example.controller;
+package app.taskmanagement.controller;
 
 import java.util.Arrays;
 import java.util.List;
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.domain.Task;
-import com.example.service.TaskService;
+import app.taskmanagement.domain.Task;
+import app.taskmanagement.service.TaskService;
 
 @RestController
 public class TaskController {

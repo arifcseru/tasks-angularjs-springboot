@@ -1,4 +1,4 @@
-package com.example.service;
+package app.taskmanagement.service;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.domain.Task;
-import com.example.repository.TaskRepository;
+import app.taskmanagement.domain.Task;
+import app.taskmanagement.repository.TaskRepository;
 
 @Service
 public class TaskServiceImpl implements TaskService {

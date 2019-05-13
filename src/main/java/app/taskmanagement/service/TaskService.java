@@ -1,8 +1,8 @@
-package com.example.service;
+package app.taskmanagement.service;
 
 import java.util.List;
 
-import com.example.domain.Task;
+import app.taskmanagement.domain.Task;
 
 public interface TaskService {
 	void add(Task task);
